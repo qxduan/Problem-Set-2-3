@@ -1,0 +1,65 @@
+{
+      "songList": [
+          {
+              "title": "So Far Away",
+              "artist": "Toshifumi Hinata",
+              "year": "1990",
+              "genres": ["Pop"]
+          },
+          {
+              "title": "Don't Worry",
+              "artist": "James Cooke",
+              "year": "2021",
+              "genres": ["Blues"]
+          },
+          {
+              "title": "Cupid",
+              "artist": "FIFTY FIFTY",
+              "year": "2023",
+              "genres": ["K-POP"]
+          },
+          {
+              "title": "10 Minutes 10 Years",
+              "artist": "Tennis",
+              "year": "2017",
+              "genres": ["Indie"]
+          },
+          {
+              "title": "I'm in Love",
+              "artist": "GLAY",
+              "year": "2000",
+              "genres": ["Rock"]
+          },
+          {
+              "title": "Life Goes On",
+              "artist": "2Pac",
+              "year": "1998",
+              "genres": ["Rap"]
+          },
+          {
+              "title": "Mi Ren De Geng Jin",
+              "artist": "my little airport",
+              "year": "2011",
+              "genres": ["Conton-Pop"]
+          },
+          {
+              "title": "Terencede Xin Shi",
+              "artist": "my little airport",
+              "year": "2011",
+              "genres": ["Conton-Pop"]
+          },
+          {
+              "title": "Something Just Like This",
+              "artist": "The Chainsmokers, Coldplay",
+              "year": "2017",
+              "genres": ["Pop", "Dance"]
+          },
+          {
+              "title": "Entre Dos Aguas",
+              "artist": "Paco de Lucia",
+              "year": "1973",
+              "genres": ["Classical Guitar"]
+          }
+      ]
+}
+  

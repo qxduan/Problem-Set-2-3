@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Song Details</title>
+    <script>
+      // assigned to variable "songData"
+      let songData = { 
+          "songList": [
+              {
+                  "title": "So Far Away",
+                  "artist": "Toshifumi Hinata",
+                  "year": "1990",
+                  "genres": ["J-Pop"]
+              },
+              {
+                  "title": "Don't Worry",
+                  "artist": "James Cooke",
+                  "year": "2021",
+                  "genres": ["Blues","Jazz"]
+              },
+              {
+                  "title": "Cupid",
+                  "artist": "FIFTY FIFTY",
+                  "year": "2023",
+                  "genres": ["K-POP"]
+              },
+              {
+                  "title": "10 Minutes 10 Years",
+                  "artist": "Tennis",
+                  "year": "2017",
+                  "genres": ["Indie","Blues"]
+              },
+              {
+                  "title": "I'm in Love",
+                  "artist": "GLAY",
+                  "year": "2000",
+                  "genres": ["Rock"]
+              },
+              {
+                  "title": "Life Goes On",
+                  "artist": "2Pac",
+                  "year": "1998",
+                  "genres": ["Rap"]
+              },
+              {
+                  "title": "Mi Ren De Geng Jin",
+                  "artist": "my little airport",
+                  "year": "2011",
+                  "genres": ["Conton-Pop"]
+              },
+              {
+                  "title": "Terencede Xin Shi",
+                  "artist": "my little airport",
+                  "year": "2011",
+                  "genres": ["Conton-Pop"]
+              },
+              {
+                  "title": "Something Just Like This",
+                  "artist": "The Chainsmokers, Coldplay",
+                  "year": "2017",
+                  "genres": ["Pop"]
+              },
+              {
+                  "title": "Entre Dos Aguas",
+                  "artist": "Paco de Lucia",
+                  "year": "1973",
+                  "genres": ["Classical Guitar"]
+              },
+          ]
+      };
+  
+  
+  </script>
+  
+</head>
+<body>
+
+
+<h2>Raw JSON Data:</h2>
+<pre id="jsonData"></pre>
+<script>
+      // Convert the JSON object to a string and display it
+      document.getElementById('jsonData').textContent = JSON.stringify(songData, null, 2);
+</script>
+
+</body>
+</html>
