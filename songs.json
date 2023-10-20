@@ -10,7 +10,7 @@
               "title": "Don't Worry",
               "artist": "James Cooke",
               "year": "2021",
-              "genres": ["Blues"]
+              "genres": ["Blues", "Jazz"]
           },
           {
               "title": "Cupid",
@@ -52,7 +52,7 @@
               "title": "Something Just Like This",
               "artist": "The Chainsmokers, Coldplay",
               "year": "2017",
-              "genres": ["Pop", "Dance"]
+              "genres": ["Pop"]
           },
           {
               "title": "Entre Dos Aguas",
