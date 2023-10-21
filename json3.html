@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter Songs By Genre</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+
+<label for="genreForm">Choose a Genre:</label>
+<form id="genreForm">
+    <select id="genreSelect">
+        <!-- Options will be added dynamically -->
+    </select>
+    <button type="button" id="filterButton">Filter</button>
+</form>
+
+<div id="songTitles"></div>
+
+<script>
+      $(document).ready(function() {
+          let songs = [];
+          let genre_unique = [];
+  
+          // Fetch the JSON data
+          $.get("songs.json", function(data) {
+              songs = data.songList;
+  
+              // Populate unique genres
+              songs.forEach(song => {
+                  song.genres.forEach(genre => {
+                      if(!genre_unique.includes(genre)){
+                          genre_unique.push(genre);
+                      }
+                  });
+              });
+  
+              // Populate dropdown options with unique genres
+              genre_unique.forEach(genre => {
+                  $('#genreSelect').append(`<option value="${genre}">${genre}</option>`);
+              });
+          });
+  
+          // Filter songs based on selected genre and display titles
+          $('#filterButton').on('click', function() {
+              let selectedGenre = $('#genreSelect').val();
+              let filteredSongs = songs.filter(song => song.genres.includes(selectedGenre));
+  
+              // Clear the div and add new filtered song titles
+              $('#songTitles').empty();
+              filteredSongs.forEach(song => {
+                  $('#songTitles').append(`<p>${song.title}</p>`);
+              });
+          });
+      });
+</script>
+  
+
+</body>
+</html>
